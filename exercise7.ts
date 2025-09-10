@@ -3,5 +3,6 @@
 //   return x*y;
 // }
 
-const multiplyNums = (...nums) => nums.reduce((accumulatedNum, currentNum)=>accumulatedNum * currentNum);
-console.log(multiplyNums(2,2,9))
+const multiplyNumbers = (...numbers) =>
+  numbers.reduce((accumulatedNum, currentNum) => accumulatedNum * currentNum);
+console.log(multiplyNumbers(2,2,9))

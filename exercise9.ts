@@ -8,7 +8,12 @@
 // }
 
 const calculateMatrixSum = matrixArr =>{
-    if(matrixArr.length<=1) return "Please enter a correct matrix, ask AI if you don't know how!"
-    return matrixArr.map((arr=> arr.reduce((accumlatedNum, currentNum)=>accumlatedNum + currentNum))).reduce((accumulatedSum, currentSum)=>accumulatedSum+currentSum)
+  if (matrixArr.length <= 1)
+    return "Please enter a correct matrix, ask AI if you don't know how!";
+  return matrixArr
+    .map((arr) =>
+      arr.reduce((accumlatedNum, currentNum) => accumlatedNum + currentNum)
+    )
+    .reduce((accumulatedSum, currentSum) => accumulatedSum + currentSum);
 }
 console.log(calculateMatrixSum([[1], [1], [1]]))

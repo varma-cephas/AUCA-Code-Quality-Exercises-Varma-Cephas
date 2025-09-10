@@ -11,7 +11,8 @@
 
 const calculateAverage = (arrOfNumbers)=>{
     if(arrOfNumbers.length<=1) return "Array has less than or one number."
-    return (arrOfNumbers.reduce((accumualtedNumber, currentNumber)=>accumualtedNumber+currentNumber)) / arrOfNumbers.length
+    const average=(arrOfNumbers.reduce((accumualtedNumber, currentNumber)=>accumualtedNumber+currentNumber)) / arrOfNumbers.length
+    return average
 }
 
 console.log(calculateAverage([100]))

@@ -12,7 +12,8 @@
 // }
 
 const maxNumber = (num1,num2,num3)=>{
-    if(new Set([num1, num2, num3]).size===1) return "Please use at least two unique numbers"
+    if(new Set([num1, num2, num3]).size===1) 
+        return "Please use at least two unique numbers"
     return Math.max(num1, num2, num3)
 }
 

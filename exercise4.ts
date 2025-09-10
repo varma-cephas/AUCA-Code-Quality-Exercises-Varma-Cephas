@@ -8,7 +8,8 @@
 //   return evenNumbers;
 // }
 const findEvenNumbers = arrOfNumbers=> {
-    if(arrOfNumbers.length<=1) return "Array has less than or one number."
+    if(arrOfNumbers.length<=1) 
+        return "Array has less than or one number."
     return arrOfNumbers.filter(number=>number%2 === 0)
 }
 

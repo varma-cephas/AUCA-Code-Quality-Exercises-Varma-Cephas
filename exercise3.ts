@@ -6,5 +6,8 @@
 //   return reversed;
 // }
 
-const reverseString = str=>str.length>1?str.split("").reverse().join(""):"Please use a valid string"
+const reverseString = (str) =>
+  str.length > 1
+    ? str.split("").reverse().join("")
+    : "Please use a valid string";
 console.log(reverseString("tri"))
